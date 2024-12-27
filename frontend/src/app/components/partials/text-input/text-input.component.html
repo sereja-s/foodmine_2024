@@ -1,0 +1,10 @@
+<!-- <input-container label="Email">
+	<input type="email" placeholder="Email" formControlName="email">			
+	<input-validation [control]="fc.email"
+	[showErrorsWhen]="isSubmitted"></input-validation>
+</input-container> -->
+<input-container [label]="label">
+	<input [type]="type" [placeholder]="label" [formControl]="formControl">			
+	<input-validation [control]="control"
+	[showErrorsWhen]="showErrorsWhen"></input-validation>
+</input-container>

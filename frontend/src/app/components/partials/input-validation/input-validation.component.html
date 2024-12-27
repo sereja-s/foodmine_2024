@@ -1,0 +1,7 @@
+<!-- <div class="error-list" *ngIf="fc.email.errors && isSubmitted">
+	<div *ngIf="fc.email.errors.required">Заполните поле: Email</div>
+	<div *ngIf="fc.email.errors.email">Email должен быть корректным</div>
+</div> -->
+<div class="error-list" *ngIf="errorMessages && showErrorsWhen">
+	<div *ngFor="let errorMessage of errorMessages">{{errorMessage}}</div>
+</div>
